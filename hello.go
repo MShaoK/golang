@@ -2,15 +2,10 @@ package main
 
 import "fmt"
 
-type Vertex struct {
-	X int
-	Y int
-}
-
 func main() {
-	v := Vertex{1, 2}
-	p := &v
-	p.Y = 1e8
-	fmt.Println(v)
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+
+	var s []int = primes[1:4]
+	fmt.Println(s)
 }
 
