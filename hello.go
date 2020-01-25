@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+
+
 type Vertex struct {
 	X, Y float64
 }
@@ -14,6 +16,9 @@ func (v Vertex) Abs() float64 {
 }
 
 func main() {
+	slice := []int {2,3,5}
+	fmt.Println(len(slice))
+	fmt.Println(cap(slice), "capacity ")
 	v := Vertex{3, 4}
 	fmt.Println(v.Abs())
 }
