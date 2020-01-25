@@ -1,27 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"math"
+	"golang.org/x/tour/wc"
+	"strings"
 )
 
-
-
-type Vertex struct {
-	X, Y float64
-}
-
-func (v Vertex) Abs() float64 {
-	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+func WordCount(s string) map[string]int {
+	words := strings.Fields(s)
+	wordCount := make(map[string]int)
+	
+	for _, word := range words {
+		wordCount[word] ++
+	}
+	return wordCount
 }
 
 func main() {
-	array := [5]int {1,2,3,4,5}
-	fmt.Println(array)
-	slice := array[2:]
-	fmt.Println(slice, "slice of array?")
-	fmt.Println(cap(slice), "capacity ")
-	v := Vertex{3, 4}
-	fmt.Println(v.Abs())
+	wc.Test(WordCount)
 }
 
