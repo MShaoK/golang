@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Printf("Fields are: %q", strings.Fields("  foo bar  baz   "))
+	fmt.Println(strings.HasPrefix("Gopher", "Go"))
+	fmt.Println(strings.HasPrefix("Gopher", "C"))
+	fmt.Println(strings.HasPrefix("Gopher", ""))
 }
 
