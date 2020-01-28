@@ -1,21 +1,11 @@
 package main
 
 import (
-	"golang.org/x/tour/wc"
+	"fmt"
 	"strings"
 )
 
-func WordCount(s string) map[string]int {
-	words := strings.Fields(s)
-	wordCount := make(map[string]int)
-	
-	for _, word := range words {
-		wordCount[word] ++
-	}
-	return wordCount
-}
-
 func main() {
-	wc.Test(WordCount)
+	fmt.Printf("Fields are: %q", strings.Fields("  foo bar  baz   "))
 }
 
