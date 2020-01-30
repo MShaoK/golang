@@ -2,12 +2,18 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
+type Test struct {
+	firstname string
+	lastname string
+	age int
+	assets float64
+}
+
 func main() {
-	fmt.Println(strings.HasPrefix("Gopher", "Go"))
-	fmt.Println(strings.HasPrefix("Gopher", "C"))
-	fmt.Println(strings.HasPrefix("Gopher", ""))
+	colin := Test{"person", "test", 55, 123.23}
+
+	fmt.Println(colin)
 }
 
