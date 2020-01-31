@@ -13,7 +13,12 @@ type Test struct {
 
 func main() {
 	colin := Test{"person", "test", 55, 123.23}
+	testMap := make(map[string]int)
+	testMap["Colin"] = 10
 
 	fmt.Println(colin)
+	fmt.Println(testMap)
+	
+
 }
 
