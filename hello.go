@@ -2,23 +2,19 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
-type Test struct {
-	firstname string
-	lastname string
-	age int
-	assets float64
+type Vertex struct {
+	X, Y float64
+}
+
+func Abs(v Vertex) float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
 func main() {
-	colin := Test{"person", "test", 55, 123.23}
-	testMap := make(map[string]int)
-	testMap["Colin"] = 10
-
-	fmt.Println(colin)
-	fmt.Println(testMap)
-	
-
+	v := Vertex{3, 4}
+	fmt.Println(Abs(v))
+	fmt.Println("no need for go build?")
 }
-
