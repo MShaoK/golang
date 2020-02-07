@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"math"
 )
-
+// struct
 type Vertex struct {
 	X, Y float64
 }
-
+//pointer function
 func (v Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
-
+//function that takes vertex
 func AbsFunc(v Vertex) float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
